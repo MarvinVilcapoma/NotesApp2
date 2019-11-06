@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".activities.RegistroActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Registro de Usuario">
+    </TextView>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#414040">
+    </View>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre de usuario">
+
+    </TextView>
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text">
+    </EditText>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombres Completos">
+
+    </TextView>
+    <EditText
+        android:id="@+id/et_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text">
+    </EditText>
+    <TextView
+
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correo Electronico">
+
+    </TextView>
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text">
+    </EditText>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contraseña">
+
+    </TextView>
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword">
+    </EditText>
+
+
+    <Button
+            android:layout_marginTop="40dp"
+            android:id="@+id/btn_registrar"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:layout_gravity="center"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:onClick="callRegister"
+        ></Button>
+
+</LinearLayout>
